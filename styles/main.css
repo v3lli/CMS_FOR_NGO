@@ -1,0 +1,136 @@
+        *{
+            font-family: 'Roboto Condensed', sans-serif;
+            box-sizing: border-box;
+        }
+
+        .nav
+        {
+            background-color:var(--color-main);
+        }
+        .brand{
+            background-color: transparent;
+        }
+
+        .laga
+        {
+          height: 4rem;
+          width:4rem;
+          padding-left: 2rem;
+         }
+
+         .jumbo-fluid{
+            color:#f4f4f4;
+         }
+            /*
+        .content{
+            margin-top: 1.5rem;
+        }
+        /*.content figure{
+            margin-top: 2rem;
+        }/* .invisible{
+            background-color: transparent;
+            } */
+
+        .navbar, nav{
+          width: 100%;
+        }
+        .nav-item a, .card, .card a{
+          color:white;
+        }
+        .footer{
+          background-color: var(--color-main);
+        }
+
+        .card
+        {
+          background-image: linear-gradient(#2B797E,#48BAC1);
+        }
+
+        footer{
+          margin: 0 auto;
+          color: whitesmoke;
+          background-color: #2B797E;
+          height: 80px;
+          width:100%;
+        }
+        /* .sidecards {
+          width: 30%;
+          margin-top: 3rem;
+        }*/
+        .jumbo{
+            height: 82vh;
+            background-size: cover;  
+       }
+        
+      .nav, .navbar, .footer
+      {
+            background-image: linear-gradient(#2B797E,#48BAC1);
+            background-size:cover;
+      }
+      .nav-item a:hover{
+        background-color:var(--color-main);
+        color:coral;
+      }
+      .card-body{
+        color: white;
+        background-color: var(--color-main-light);
+      }
+
+    body{
+        background-color: white;
+        background-repeat: repeat;
+        background-image: url("../images/cream_pixels_@2X.png");
+        background-size: 122px 122px;
+        
+    }
+       
+    section header{
+        font-size: 1.5rem;
+        color: var(--color-main);
+        margin-bottom: 1rem;
+        margin-left: 1rem;
+        margin-top: 0.7rem;
+    }
+    div{
+        --color-main:#2B797E;
+        --white-grad:linear-gradient( black, white);
+        --color-main-light: #48BAC1;
+        --color-dark-mode:#3c4245;
+    }
+    section div .info h6, .card-body ul li{
+        font-family: 'PT Sans', sans-serif;
+    }
+   figure{
+       height: fit-content;
+   }
+
+   .thumbnail{
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    html,body
+    {
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden; 
+    }
+
+    @media only screen and (max-width:600px){
+      #title{
+        font-size: 65%;
+      }
+
+      #type{
+        font-size: 90%;
+      }
+
+      #info{
+        font-size: 80%;
+      }
+
+      #author{
+        font-size: 30%;
+      }
+    }

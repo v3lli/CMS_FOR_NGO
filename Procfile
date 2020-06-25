@@ -1,1 +1,1 @@
-web: vendor/bin/heroku-php-mysql web/
+web: $(composer config bin-dir)/heroku-php-mysql

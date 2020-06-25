@@ -1,3 +1,4 @@
 {
-    
+    "name": "vendor/bin",
+    "bin": ["bin/heroku-php-mysql"]
 }

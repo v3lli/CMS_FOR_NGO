@@ -1,1 +1,1 @@
-web: vendor/bin/heroku-php-mysql web/sections/index.php
+web: vendor/bin/heroku-php-mysql web/

@@ -1,1 +1,1 @@
-web: $(composer config bin-dir)/heroku-php-mysql rvi/
+web: vendor/bin/heroku-php-apache2

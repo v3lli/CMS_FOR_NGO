@@ -1,4 +1,4 @@
-<!-- <?php
+<?php
 $user = 'root';
 $password = 'root';
 $db = 'rvi';

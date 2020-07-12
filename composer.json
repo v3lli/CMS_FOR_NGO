@@ -1,7 +1,7 @@
-{
-  
+{ 
   "require": {
-    "ext-mysql": "*",
+    "php": "~7.1.0",
+    "ext-mysqlnd":"*",
     "ext-gettext":"*"
   },
   "require-dev": {

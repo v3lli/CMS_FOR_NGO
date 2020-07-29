@@ -1,17 +1,17 @@
 <?php
-$user = 'b7e7776743c3fd';
-$password = 'aaa45a01';
-$db = 'rvi';
-$host = 'us-cdbr-east-05.cleardb.net';
-$port = 8889;
-$connection = mysqli_connect($host,$user,$password,$db);
-
-// $user = 'root';
-// $password = 'root';
+// $user = 'b7e7776743c3fd';
+// $password = 'aaa45a01';
 // $db = 'rvi';
-// $host = 'localhost';
+// $host = 'us-cdbr-east-05.cleardb.net';
 // $port = 8889;
 // $connection = mysqli_connect($host,$user,$password,$db);
+
+$user = 'root';
+$password = 'root';
+$db = 'rvi';
+$host = 'localhost';
+$port = 8889;
+$connection = mysqli_connect($host,$user,$password,$db);
 
 if(mysqli_error($connection)){
     echo 'No connection';

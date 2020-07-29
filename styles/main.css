@@ -2,10 +2,22 @@
             font-family: 'Roboto Condensed', sans-serif;
             box-sizing: border-box;
         }
-
+        .form-former
+        {
+          height:1.5rem;
+          width: 6em;
+          margin-left:0.2rem;
+        }
+        /* .btn-tr{
+          height:1.5rem;
+          width: 3.9rem;
+          font-size:0.15rem;
+          margin-left: 1rem;
+        } */
         .nav
         {
-            background-color:var(--color-main);
+            background-color: transparent;
+            /* background-color:var(--color-main); */
         }
         .brand{
             background-color: transparent;
@@ -18,8 +30,16 @@
           padding-left: 2rem;
          }
 
+         html{
+          scroll-behavior: smooth;
+        }
+
          .jumbo-fluid{
             color:#f4f4f4;
+         }
+
+         .darktron:hover{
+           background-color: rgba(0, 0, 0, 0.192);
          }
             /*
         .content{
@@ -62,14 +82,22 @@
             background-size: cover;  
        }
         
-      .nav, .navbar, .footer
+      .footer
       {
             background-image: linear-gradient(#2B797E,#48BAC1);
             background-size:cover;
       }
-      .nav-item a:hover{
+      /* .nav-item a:hover{
         background-color:var(--color-main);
         color:coral;
+      } */
+      .navbar-custom .nav-item.active .nav-link,
+      .navbar-custom .nav-item:hover .nav-link {
+          color: #ff5249;
+          border-bottom: 1px solid #ff5249;
+          border-width: 60%;
+          background-color: transparent;
+          
       }
       .card-body{
         color: white;
@@ -79,7 +107,7 @@
     body{
         background-color: white;
         background-repeat: repeat;
-        background-image: url("../images/cream_pixels_@2X.png");
+        /* background-image: url("../images/cream_pixels_@2X.png"); */
         background-size: 122px 122px;
         
     }
@@ -117,7 +145,18 @@
         overflow-x: hidden; 
     }
 
-    @media only screen and (max-width:600px){
+    .darktron{
+      object-fit:cover;
+      height:100%;
+      width: 100%;
+      padding-top: 200px;
+  }
+
+    .navbar-custom{
+      background-color: transparent;
+    }
+
+    @media only screen and (max-width:800px){
       #title{
         font-size: 65%;
       }
@@ -132,5 +171,11 @@
 
       #author{
         font-size: 30%;
+      }
+    }
+
+    @media only screen and (max-height:400px){
+      .darktron{
+        padding-top: 100px;
       }
     }

@@ -3,9 +3,8 @@
   <head>
       <meta charset='utf-8'>
       <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-      <title>Page Title</title>
+      <title>Real Visionaries Initiat</title>
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <link rel='stylesheet' type='text/css' media='screen' href='../styles/bootstrap.min.css'>
       <link rel='stylesheet' type='text/css' media='screen' href='../styles/main.css'>
       <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300&display=swap" rel="stylesheet">
@@ -21,23 +20,23 @@
     $uzaname = $_SESSION['username'];
     ?>
       <header class="mainheader">
-                <div class = "">
-                    <img class="ml-3 float-left" style = "max-height: 5rem;" src="../images/imageonline-co-whitebackgroundremoved.PNG" alt="">
-                  <div style= "" class = "brand row px-5 float-right">
+                <div class = "d-flex justify-content-between container">
+                    <img class="ml-3 " style = "max-height: 5rem;" src="../images/imageonline-co-whitebackgroundremoved.PNG" alt="">
+                  <div class = "ml-auto d-inline-flex justify-content-around align-items-center">
                     <?php if(isset($userfname)){?>
-                      <p style ="margin-left:2rem;" class="alighn-self-center"> Hi <?php echo $uzaname ;?></p><br>
-                    <form action = "controlla/logout.con.php" method = "POST">
-                      <button style = "height:1.5rem; width: 3.5rem; font-size:0.6rem" class = "form-control form-control-sm mx-3" type = "submit" name = "logout">Log Out</button> 
+                      <p class="my-1"> Hi <?php echo $uzaname ;?></p><br>
+                    <form class="" action = "controlla/logout.con.php" method = "POST">
+                      <button class = "form-control-sm mx-3 btn-sm btn-outline-secondary" type = "submit" name = "logout">Log Out</button> 
                     </form>
                     <?php
                     }
                     else
                     {?>
-                      <form class = "col-sm-7 mt-1" action="controlla/login.con.php" method = "POST">
-                      <input style = "height:1.5rem; width: 4.5rem; margin-left:0.2rem; " class = " form-control form-control-sm" type = "hidden" name = "url_log" value = "<?php echo $_SERVER['REQUEST_URI']?>"/>
-                      <input style = "height:1.5rem; width: 4.5rem; margin-left:0.2rem; " class = " form-control form-control-sm" type = "name" placeholder = "Username/email" name = "uname_log" required/>
-                      <input style = "height:1.5rem; width: 4.5rem; margin-left:0.2rem; " class = "form-control form-control-sm" type = "password" placeholder = "Password" name = "pw_log" required/>
-                      <button style = "height:1.5rem; width: 3rem; font-size:0.6rem; margin-left:0.2rem;" class = "form-control form-control-sm" type = "submit" name = "submit_log">LOG IN</button>
+                      <form class = "form-group form-inline d-l-block" action="controlla/login.con.php" method = "POST">
+                      <input class = "form-control-sm form-former" type = "hidden" name = "url_log" value = "<?php echo $_SERVER['REQUEST_URI']?>"/>
+                      <input class = "form-control-sm form-former  btn-outline-info" type = "name" placeholder = "Username/email" name = "uname_log" required/>
+                      <input class = "form-control-sm form-former  btn-outline-info" type = "password" placeholder = "Password" name = "pw_log" required/>
+                      <button class = "form-control-sm btn-sm btn-outline-secondary" type = "submit" name = "submit_log">LOG IN</button>
                     </form>
                     <!-- <a class = "ml-4 float-right btn btn-outline-info" style = "align-self: center; width: 2.5rem; font-size:0.65rem;text-align: center" href = "signup.php">Sign up</a> -->
                     <?php
@@ -45,30 +44,39 @@
                   ?>
                   </div>
                 </div>
-                <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-  <!-- Brand -->
-  <a class="navbar-brand" href="#">Navbar</a>
+                <nav class="ml-4 navbar navbar-light navbar-expand-lg bg-transparent navbar-custom">
+                  <!-- Brand -->
+                  <a class="navbar-brand" href="#">R V I</a>
 
-  <!-- Toggler/collapsibe Button -->
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+                  <!-- Toggler/collapsibe Button -->
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
 
-  <!-- Navbar links -->
-  <div class="collapse navbar-collapse" id="collapsibleNavbar">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="index.php">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="signup.php">Sign Up</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li> 
-    </ul>
-  </div> 
-</nav>
+                  <!-- Navbar links -->
+                  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link" href="index.php">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class=" nav-link" href="#">MH Topics</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">News</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Discussions</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="">Archives</a>
+                      </li> 
+                    </ul>
+                  </div> 
+                </nav>
                 <!-- <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
                     
                     <a class="navbar-brand" href="index.php"></a>

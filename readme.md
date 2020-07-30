@@ -27,4 +27,8 @@ article Mobile
 article comments
 ![Footer](images/screenshots/comments.png)
 
+article footer
+![Footer](images/screenshots/articlefooter.png)
+
+
 

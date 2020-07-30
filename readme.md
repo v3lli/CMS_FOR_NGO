@@ -10,12 +10,12 @@ alter the values for root, db, host, password. to match your local settings.
 
 import the database values from the sql file provided
 htdocs/RVI/rvi-2.sql
-Laning Page inc. Header
-![landing](images/screenshots/Screenshot 2020-07-29 at 11.34.31 PM.png)
+Landing Page inc. Header
+![landing](images/screenshots/landing.png)
 Body
-![ScrollDown](images/screenshots/Screenshot 2020-07-29 at 11.34.54 PM.png)
+![ScrollDown](images/screenshots/body.png)
 Footer
-![Footer](images/screenshots/Screenshot 2020-07-29 at 11.37.10 PM.png)
+![Footer](images/screenshots/footer.png)
 
 
 it contains the 
